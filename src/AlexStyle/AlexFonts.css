@@ -1,0 +1,21 @@
+.ft-bold { font-weight: bold; }
+.ft-small { font-size: 0.8rem; }
+.ft-normal { font-size: 1rem; }
+.ft-great { font-size: 1.2rem; }
+.ft-title { font-size: 2rem; }
+.ft-big-title { font-size: 4rem; }
+
+.ft-black { color: var(--black); }
+.ft-white { color: var(--white); }
+.ft-orange { color: var(--orange); }
+.ft-yellow { color: var(--yellow); }
+.ft-red { color: var(--red); }
+.ft-blue { color: var(--blue); }
+.ft-green { color: var(--green); }
+
+.txt-left { text-align: left; }
+.txt-center { text-align: center; }
+.txt-right { text-align: right; }
+.txt-up { text-transform: uppercase; }
+.txt-low { text-transform: lowercase; }
+.txt-cpt { text-transform: capitalize; }

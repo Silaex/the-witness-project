@@ -1,0 +1,14 @@
+.bd-round { border-radius: 50%; }
+.bd-r-sm { border-radius: 3px; }
+.bd-r-md { border-radius: 6px; }
+.bd-r-lg { border-radius: 10px; }
+.bd-none { border: none; }
+
+.bd-c-white { border-color: var(--white); }
+.bd-c-black { border-color: var(--black); }
+.bd-c-gray { border-color: var(--gray); }
+.bd-c-blue { border-color: var(--blue); }
+.bd-c-orange { border-color: var(--orange); }
+.bd-c-red { border-color: var(--red); }
+.bd-c-yellow { border-color: var(--yellow); }
+.bd-c-green { border-color: var(--green); }

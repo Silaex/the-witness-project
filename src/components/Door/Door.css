@@ -1,0 +1,8 @@
+.door {
+    position: relative;
+}
+
+.door-pointer {
+    position: absolute;
+    animation: show-bar 5s;
+}

@@ -1,4 +1,12 @@
+:root {
+  --white: #F1F1F1;
+  --background: #282c34;
+}
+
 .App {
-  background-color: #282c34;
+  background-color: var(--background);
   min-height: 100vh;
+  color: var(--white);
+  overflow-x: hidden;
+  font-size: calc(10px + 2vmin);
 }

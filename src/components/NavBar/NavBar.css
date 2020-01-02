@@ -1,0 +1,40 @@
+.navbar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    user-select: none;
+    z-index: 999;
+}
+
+.navbar .active { position: relative; transition: all .5s; color: var(--background); }
+.navbar .active::before {
+    position: absolute;
+    content: "";
+    left: -10px;
+    right: 0;
+    bottom: -5px;
+    top: 0;
+    background: var(--white);
+    animation: active-link-bottom .25s forwards;
+    border-radius: 3px;  
+    z-index: -1;
+}
+
+@keyframes active-link-bottom {
+    from {
+        right: 100%;
+    }
+    to {
+        right: -10px;
+    }
+}
+
+@keyframes active-link-top {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
+}

@@ -1,0 +1,61 @@
+.bar-container {
+    --bar-container-width: 75%;
+    width: var(--bar-container-width);
+    height: var(--bar-container-height);
+    background: var(--black);
+    position: relative;
+    border-radius: 30px;
+    --bar-container-height: 30px;
+    --bar-color: var(--black);
+    user-select: none;
+}
+
+.begin {
+    position: absolute;
+    height: 200%;
+    width: calc(var(--bar-container-height) * 2);
+    background: var(--black);
+    border-radius: 50%;
+    bottom: calc(var(--bar-container-height) / -2);
+    left: calc(var(--bar-container-height) * -1.5);
+    transition-property: background, filter;
+    transition-duration: .1s;
+    z-index: 0;
+}
+
+.bar {
+    position: absolute;
+    width: 50%;
+    background: var(--black);
+    height: 100%;
+    border-radius: var(--bar-container-height);
+    transition-property: background, filter;
+    transition-duration: .1s;
+}
+
+.bar-tooltip {
+    position: absolute;
+    top: -50%;
+    right: -5px;
+    width: calc(var(--bar-container-height) * 1.75);
+    height: 200%;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .1s;
+}
+
+.bar-container:hover .bar-tooltip {
+    opacity: 1;
+}
+
+@media screen and (min-width: 1200px) {
+    .onMoving:hover .begin,
+    .onMoving:hover .bar {
+        filter: drop-shadow(0px 0px calc(var(--bar-container-height) / 4) var(--bar-color));
+    }
+}
+.onMoving .begin,
+.onMoving .bar {
+    background: var(--bar-color);
+}

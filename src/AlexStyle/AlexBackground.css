@@ -1,0 +1,8 @@
+.bg-white { background: var(--white); color: var(--black); }
+.bg-gray { background: var(--gray); color: var(--black); }
+.bg-black { background: var(--black); color: var(--white); }
+.bg-orange { background: var(--orange); color: var(--white); }
+.bg-blue { background: var(--blue); color: var(--white); }
+.bg-green { background: var(--green); color: var(--white); }
+.bg-red { background: var(--red); color: var(--white); }
+.bg-yellow { background: var(--yellow); color: var(--black); }
